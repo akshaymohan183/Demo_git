@@ -1,21 +1,15 @@
 // Minimum of Array
-#include<iostream>
-using namespace std;
-int main ()
-{
-    int arr[10], n, i, max, min;
-    cout << "Enter the size of the array : ";
-    cin >> n;
-    cout << "Enter the elements of the array : ";
-    for (i = 0; i < n; i++)
-        cin >> arr[i];
+// C++ program to demonstrate the use of std::min_element 
+#include <iostream> 
+#include <algorithm> 
+using namespace std; 
+int main() 
+{ 
+	int v[10] = { 9, 4, 7, 2, 5, 10, 11, 12, 1, 3 }; 
 
-    min = arr[0];
-    for (i = 0; i < n; i++)
-    {
-        if (min > arr[i])
-            min = arr[i];
-    }
-    cout << "Smallest element : " << min;
-    return 0;
+	int* i1; 
+	i1 = std::min_element(v+0,v+10); 
+
+	cout << *i1 << "\n"; 
+	return 0; 
 }

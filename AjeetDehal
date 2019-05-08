@@ -1,5 +1,4 @@
-// Minimum of Array
-// C++ program to demonstrate the use of std::min_element 
+
 #include <iostream> 
 #include <algorithm> 
 using namespace std; 

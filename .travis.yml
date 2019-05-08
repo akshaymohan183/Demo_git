@@ -1,12 +1,12 @@
-language: cpp  
-      compiler: gcc  
+language: c++  
+      compiler: gcc 
       dist: trusty  
       script:   
-        - g++ febin.cpp  -std=c++17 -o travis_gcc_cpp17  
+        - gcc febin.cpp  -std=c++17 -o travis_gcc_cpp17  
         - ./travis_gcc_cpp17 
-        - g++ AjeetDehal.cpp  -std=c++17 -o travis_gcc_cpp17 
+        - gcc AjeetDehal.cpp  -std=c++17 -o travis_gcc_cpp17 
         - ./travis_gcc_cpp17
-        - g++ akshay.cpp  -std=c++17 -o travis_gcc_cpp17 
+        - gcc akshay.cpp  -std=c++17 -o travis_gcc_cpp17 
         - ./travis_gcc_cpp17
-        - g++ himm.cpp -std=c++17 -o travis_gcc_cpp17 
+        - gcc himm.cpp -std=c++17 -o travis_gcc_cpp17 
         - ./travis_gcc_cpp17

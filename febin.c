@@ -1,28 +1,26 @@
-//Reversing an Array
-#include <stdio.h>
- 
+
+#include <iostream>
+#include <algorithm>
+using namespace std;
+void print(int arr[], int n)
+{
+	for (int i = 0; i < n; i++) {
+		cout << arr[i] << " ";
+	}
+}
+void reverse(int arr[], int n)
+{
+	for (int low = 0, high = n - 1; low < high; low++, high--) {
+		swap(arr[low], arr[high]);
+	}
+}
 int main()
 {
-   int n, c, d, a[100], b[100];
- 
-   printf("Enter the number of elements in array\n");
-   scanf("%d", &n);
- 
-   printf("Enter array elements\n");
- 
-   for (c = 0; c < n ; c++)
-      scanf("%d", &a[c]);
+	int arr[] = { 1, 2, 3, 4, 5 };
+	int n = sizeof(arr)/sizeof(arr[0]);
 
-   for (c = n - 1, d = 0; c >= 0; c--, d++)
-      b[d] = a[c];
- 
-   for (c = 0; c < n; c++)
-      a[c] = b[c];
- 
-   printf("Reverse array is\n");
- 
-   for (c = 0; c < n; c++)
-      printf("%d\n", a[c]);
- 
-   return 0;
+	reverse(arr, n);
+	print(arr, n);
+
+	return 0;
 }

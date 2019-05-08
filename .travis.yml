@@ -2,8 +2,8 @@ language: cpp
  compiler: gcc
  dist: trusty
  script:
- - g++ febin.cpp 
- - g++ himm.cpp
- - g++ akshay.cpp
- - g++ AjeetDehal.cpp
- - ./travis_gcc_cpp17
+ - gcc febin.cpp 
+ - gcc himm.cpp
+ - gcc akshay.cpp
+ - gcc AjeetDehal.cpp
+ - ./travis_gcc_cpp

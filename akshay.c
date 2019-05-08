@@ -15,7 +15,7 @@ int main ()
             max = arr[i];
     }
 
-    cout << "Largest element : " << max;
+    cout << "Largest elemnt : " << max;
     return 0;
 }
 
